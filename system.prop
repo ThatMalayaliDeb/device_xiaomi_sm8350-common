@@ -65,6 +65,11 @@ persist.vendor.sensors.enable.mag_filter=true
 # WFD
 persist.debug.wfd.enable=1
 
+# Radio VoNR
+persist.radio.is_vonr_enabled_0=true
+persist.radio.is_vonr_enabled_1=true
+persist.vendor.vonr_setting_support=1
+
 # Better Ram
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
