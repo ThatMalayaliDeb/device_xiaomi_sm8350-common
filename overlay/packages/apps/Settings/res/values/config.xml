@@ -61,5 +61,4 @@
 
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
-
 </resources>
