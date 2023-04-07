@@ -41,7 +41,7 @@
             <Limit name="blocks-per-second" range="36-7776000" />
             <Limit name="bitrate" range="1-220000000" />
             <Limit name="frame-rate" range="1-960" />
-            <Limit name="concurrent-instances" max="8" />
+            <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
             <Limit name="performance-point-1280x720" value="960" />
             <Limit name="performance-point-1920x1080" value="480" />
