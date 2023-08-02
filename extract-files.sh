@@ -96,8 +96,7 @@ function blob_fixup() {
             sed -i 's/xml=version/xml\ version/g' "${2}"
 	    ;;
         vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so)
-            hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/7C000094881640F9/1F2003D5881640F9/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
-            mv "${TMPDIR}/${1##*/}" "${2}"
+            "${SIGSCAN}" -p "7C 00 00 94 88 16 40 F9" -P "1F 20 03 D5 88 16 40 F9" -f "${2}"
             ;;
         vendor/lib64/hw/camera.xiaomi.so)
             "${SIGSCAN}" -p "4d 07 00 94" -P "1F 20 03 D5" -f "${2}"
