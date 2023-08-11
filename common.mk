@@ -426,7 +426,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-droidx
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -552,7 +552,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
-# vndservicemanager has been removed from API30 devices (aosp/1235751)
+# vndservicemanager has been removed from API30 devices (droidx/1235751)
 # but we still need it for display services.
 PRODUCT_PACKAGES += \
     vndservicemanager
